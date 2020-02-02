@@ -1,0 +1,35 @@
+I believe that I have accomplished basically everything that I set out to in my
+initial proposal.  I have created a playable version of SushiGo using all of the
+base cards, except for Chopsticks, for up to five players.  I implemented all of
+the unique scoring systems for these cards and made sure that they all run at
+the correct times.  I implemented a user interface where a player can select
+a card from their hand to play and then can select a set to play it on.  In
+order to accomplish this, I implemented a mechanism to see which card you had
+selected so the player could easily tell what they picked.  I made the choice
+to add the new set button because for some reason some people seemed to have a
+hard time clicking on the set they wanted and instead kept accidentally creating
+new sets.
+
+Since the update, I have solved all of the problems that I mentioned.  I made it
+so the adversary could make better decisions of which cards to play and
+guaranteed that whenever it plays a card, it plays it in the best spot for it so
+that it gets maximal points.  While the adversary is not difficult, especially
+in games with more players where the adversaries tend to compete between
+themselves more than against the player, it at least makes the game somewhat
+challenging.  I also adjusted the scoring of the game so that even if a player
+failed to place cards such as Sashimi, Tempura, or Dumpling in its correct set,
+it still will score it correctly.  I was also able to make some user interface
+updates.  I made the opponents played cards easier to see and placed them
+horizontally rather than vertically so that they would take up less space.  I
+also added the rules card from the game to make it easy to refer to the rules
+while playing.
+
+Overall, I spent a lot of time working on this over the past few weeks and I
+really enjoyed implementing it.  I didn't encounter that many issues when working
+with elm, so everything went pretty smoothly.  My biggest issue was in the
+scoring for maki which required me to go through the list of players and
+determine who had the most maki from that round and who had the second most.
+This was further complicated by the fact that there could be a tie for the most
+or second most and they all needed to be awarded points.  I also struggled a bit
+with the Html, as you might be able to tell, but overall I am pretty happy with
+everything.
